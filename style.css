@@ -1,0 +1,109 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:fantasy;
+}
+
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   text-align: center;
+   background-image:linear-gradient( yellow,rgb(0, 51, 255));
+}
+#open-btn{
+   position: absolute;
+   top: 25rem;
+   left: 3rem;
+   width: 20rem;
+   height: 6rem;
+   font-size: 2rem;
+   background: transparent;
+   /* border: solid 2px white; */
+   border: transparent;
+   /* border-radius: 10px; */
+   /* padding:3px; */
+   transition: .5s;
+}
+#btn
+{
+   border: solid 2px white;
+   border-radius: 8px;
+   box-shadow: 0 0 3px black;
+   padding: 8px 4px;
+   /* transition: .5s; */
+}
+#btn:hover{
+   background-color: aliceblue;
+   color: rgb(17, 175, 200);
+}
+#btn:active{
+   color: red;
+}
+
+#modal
+{
+   background-color: azure;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: 200px;
+   height: 100px;
+   font-size: 1.5rem;
+   padding: 10px 20px;
+   align-items: center;
+   border-radius: 5px;
+   display: flex;
+   justify-content: space-between;
+   animation-name: animatemodal;
+   animation-duration: .6s;
+   /* animation-name: animatemodal1;
+   animation-duration: 1s; */
+}
+
+/* Modal animation section */
+@keyframes animatemodal {
+   from{
+      top:-300px;
+      opacity: 0;
+   }
+   to{
+      top: 50%;
+      opacity: 1;
+   }
+}
+/* @keyframes  animatemodal1
+{
+   from{
+      top:50%;
+      opacity: 1;
+   }
+   to{
+      top: 100%;
+      opacity: 0;
+   }
+} */
+#close-btn
+{
+   font-size:2.5rem;
+   cursor: pointer;
+}
+#close-btn:hover{
+   color: red;
+   /* border:  1px red; */
+}
+#modal-container
+{
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   /* to fade background on appearing of modal container */
+   background-color: rgba(0, 0, 0, .2);
+}
