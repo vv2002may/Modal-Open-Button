@@ -18,7 +18,7 @@ body{
    top: 25rem;
    left: 3rem;
    width: 20rem;
-   height: 6rem;
+   height: 29rem;
    font-size: 2rem;
    background: transparent;
    /* border: solid 2px white; */
@@ -26,6 +26,7 @@ body{
    /* border-radius: 10px; */
    /* padding:3px; */
    transition: .5s;
+   cursor: pointer;
 }
 #btn
 {
